@@ -1,0 +1,29 @@
+body {
+    background-image: url(index\ blue\ background\ image.jpg); /* Cloud blue background */
+    background-size: cover; /* covers the entire page */
+    background-position: centre; /* centers the background image */
+    background-repeat: no repeat; /* makes the background image stop repeating*/
+    background-color: black; /* black background of the website*/
+    color: black; /*white text so it doesn't merge / so it has a good contrast from a black background*/
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+/* External CSS for project grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Create columns with minimum width of 200px and maximum width based on available space */
+    gap: 20px; /* Add gap between grid items */
+    justify-content: center; /* Center the grid horizontally */
+    align-items: center; /* Center the grid vertically */
+    margin: 50px auto; /* Add margin to center the grid on the page */
+    max-width: 800px; /* Limit the maximum width of the grid */
+    padding: 0 20px; /* Add padding to the grid */
+}
+
+.project-item img {
+    max-width: 100%; /* Set maximum width to 100% */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure images are displayed as block elements */
+}
