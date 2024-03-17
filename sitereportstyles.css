@@ -1,0 +1,12 @@
+body {
+    background-image: url(index\ blue\ background\ image.jpg); /* Cloud blue background */
+    background-size: cover; /* covers the entire page */
+    background-position: centre; /* centers the background image */
+    background-repeat: no repeat; /* makes the background image stop repeating*/
+    background-color: black; /* black background of the website*/
+    color: black; /*white text so it doesn't merge / so it has a good contrast from a black background*/
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}

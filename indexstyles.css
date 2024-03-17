@@ -1,47 +1,43 @@
 /* styles.css */
+
+/* Body Styles */
 body {
-    background-image: url(index\ blue\ background\ image.jpg); /* Cloud blue background */
+    background-image: url('index blue background image.jpg'); /* Cloud blue background */
     background-size: cover; /* covers the entire page */
-    background-position: centre; /* centers the background image */
-    background-repeat: no repeat; /* makes the background image stop repeating*/
-    background-color: black; /* black background of the website*/
-    color: black; /*white text so it doesn't merge / so it has a good contrast from a black background*/
+    background-position: center; /* centers the background image */
+    background-repeat: no-repeat; /* stops the background image from repeating */
+    background-color: black; /* black background of the website */
+    color: black; /* white text for contrast with black background */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Change the font to Arial or a sans-serif font */
     position: absolute;
-    top: 15%;
+    top: 20%;
     left: 50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
 }
-body {
-    background-image: url(index\ blue\ background\ image.jpg); /* Cloud blue background */
-    background-size: cover; /* covers the entire page */
-    background-position: centre; /* centers the background image */
-    background-repeat: no repeat; /* makes the background image stop repeating*/
-    background-color: black; /* black background of the website*/
-    color: black; /*white text so it doesn't merge / so it has a good contrast from a black background*/
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    transform: translate(-50%, -50%)
-}
+
+/* Center Heading Styles */
 .center-heading {
-        text-align: center; /* Center align the text */
-}
-body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif; /* Change the font to Arial or a sans-serif font */
+    text-align: center; /* Center align the text */
 }
 
+/* Heading Styles */
 h1, h2, h3 {
-    font-family: 'Franklin Gothic Medium', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Change the font for headings */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Change the font for headings */
 }
 
+/* Paragraph Styles */
 p {
-    font-family: 'Franklin Gothic Medium', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Change the font for paragraphs */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Change the font for paragraphs */
 }
-/* styles.css */
+
+/* Logo Styles */
 .logo-container {
     width: 200px; /* Adjust the size of the container */
     height: 120px; /* Adjust the size of the container */
     position: relative;
+    top: 50%;
+    left: 125%;
+    transform: translate(-50%, -50%); /* Center the container */
 }
 
 .logo {
@@ -58,12 +54,4 @@ p {
     to {
         transform: rotate(360deg);
     }
-}
-.logo-container {
-    width: 200px; /* Adjust the size of the container */
-    height: 200px; /* Adjust the size of the container */
-    position: absolute; /* Adjust position type */
-    top: 50%; /* Adjust top position */
-    left: 120%; /* Adjust left position */
-    transform: translate(-50%, -50%); /* Center the container */
 }

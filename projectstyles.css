@@ -10,44 +10,20 @@ body {
     left: 50%;
     transform: translate(-50%, -50%)
 }
-/* Reset default margin and padding */
-body, h1, h2, p, ul, li {
-    margin: 0;
-    padding: 0;
-}
-
-/* Center the content */
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f4f4f4;
-}
-
-/* Main heading style */
-h1 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-/* Grid layout for projects */
+/* External CSS for project grid */
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Create columns with minimum width of 200px and maximum width based on available space */
+    gap: 20px; /* Add gap between grid items */
+    justify-content: center; /* Center the grid horizontally */
+    align-items: center; /* Center the grid vertically */
+    margin: 50px auto; /* Add margin to center the grid on the page */
+    max-width: 800px; /* Limit the maximum width of the grid */
+    padding: 0 20px; /* Add padding to the grid */
 }
 
-/* Style for each project item */
-.project-item {
-    border: 1px solid #ddd;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    overflow: hidden; /* Ensure images don't overflow */
-}
-
-/* Style for project images */
 .project-item img {
-    width: 100%; /* Ensure images fill their containers */
+    max-width: 100%; /* Set maximum width to 100% */
     height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure images are displayed as block elements */
 }
