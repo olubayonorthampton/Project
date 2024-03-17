@@ -1,0 +1,53 @@
+body {
+    background-image: url(index\ blue\ background\ image.jpg); /* Cloud blue background */
+    background-size: cover; /* covers the entire page */
+    background-position: centre; /* centers the background image */
+    background-repeat: no repeat; /* makes the background image stop repeating*/
+    background-color: black; /* black background of the website*/
+    color: black; /*white text so it doesn't merge / so it has a good contrast from a black background*/
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+/* Reset default margin and padding */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Center the content */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* Main heading style */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Grid layout for projects */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+/* Style for each project item */
+.project-item {
+    border: 1px solid #ddd;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensure images don't overflow */
+}
+
+/* Style for project images */
+.project-item img {
+    width: 100%; /* Ensure images fill their containers */
+    height: auto; /* Maintain aspect ratio */
+}
