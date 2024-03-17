@@ -11,3 +11,47 @@ body {
     left: 50%;
     transform: translate(-50%, -50%)
 }
+.center-heading {
+        text-align: center; /* Center align the text */
+}
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif; /* Change the font to Arial or a sans-serif font */
+}
+
+h1, h2, h3 {
+    font-family: 'Franklin Gothic Medium', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Change the font for headings */
+}
+
+p {
+    font-family: 'Franklin Gothic Medium', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Change the font for paragraphs */
+}
+/* styles.css */
+.logo-container {
+    width: 200px; /* Adjust the size of the container */
+    height: 120px; /* Adjust the size of the container */
+    position: relative;
+}
+
+.logo {
+    width: 100%; /* Ensure the logo fills its container */
+    height: 100%; /* Ensure the logo fills its container */
+    position: absolute;
+    animation: spin 2s linear infinite; /* Adjust animation duration and timing */
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.logo-container {
+    width: 200px; /* Adjust the size of the container */
+    height: 200px; /* Adjust the size of the container */
+    position: absolute; /* Adjust position type */
+    top: 50%; /* Adjust top position */
+    left: 250%; /* Adjust left position */
+    transform: translate(-50%, -50%); /* Center the container */
+}
